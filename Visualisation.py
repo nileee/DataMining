@@ -11,7 +11,7 @@ labels_path = os.path.join(os.getcwd(), 'datasets', 'landsat', 'landsat_classes.
 landsat_labels = pd.read_csv(labels_path, delimiter=',', index_col=0)
 landsat_labels
 dict = landsat_labels.to_dict()["Class"]
-
+# something here
 
 def ApplyLabelNames(frameSeries):
     labelValue = frameSeries.loc['label']
